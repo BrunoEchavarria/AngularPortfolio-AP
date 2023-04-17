@@ -1,1 +1,218 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-size: 20px;
+    text-align:center;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+
+.nav-link img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.aboutUs{
+    color: white;
+}
+.home__aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.689); 
+    width: 450px;
+    height: 450px;
+}
+.home__description .txt-change{
+    font-weight: bold;
+    color: rgb(97, 92, 92);
+    font-style: normal;
+}
+.home__description_title{
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(0, 0, 0);
+}
+.home__description_parrafo{
+    color:rgb(0, 0, 0);
+}
+
+.acercade{
+    height: 700px;
+    background-image: url(/PortfolioAngular/src/img/bg-port13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.acercade_transparencia{
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.527);
+
+}
+.acercade_img{ 
+    width: 450px;
+    height: 450px; 
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+.description{
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: black;
+}
+.img-logo{
+    width: -webkit-fill-available;
+}
+.nav-link__name{
+    display: none;
+}
+.nav-item .nav-link:hover img{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: 1s;
+}
+.profile-decription{
+    border: solid black 1px;
+    padding: 2rem;
+    margin: 3rem;
+}
+.profile-content{
+  /* display: flex; */
+  flex-direction: row-reverse;  
+}
+.profile-img{
+    align-items: center;
+}
+.profile-circle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-circle img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    margin-left: -50px;
+}
+.profile-circle:hover img{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.1);
+    transition: 1s;
+
+}
+.profile-img h3{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.profile-img P{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.profile-list { 
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.info-button{
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    border: solid 1px rgb(255, 255, 255);
+    text-decoration: none;
+}
+.product-card{
+    padding-top: 2rem;
+}
+.text {
+    background-color: #c4c4c4;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    /* text-transform: uppercase; */
+    font-family: verdana;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+@media (max-width: 768px) {
+
+    .img-logo{
+
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+        align-items: center;
+    }
+    .home__aboutme{
+        width: 350px;
+        height: auto;
+        /* background-color: transparent; */
+        
+    }
+    .acercade_img{
+        width: auto;
+        height: 300px;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .acercade_img img {
+        justify-content: center;
+        align-items: center;
+    }
+    .home__description_title{
+        color: rgb(255, 255, 255);
+    }
+    .home__description_parrafo{
+        color: rgb(255, 255, 255);
+    }
+    .nav-link__name{
+        display: block;
+    }
+
+    .profile-content{
+        display: block;
+        flex-direction: column;
+    }
+    .profile-decription {
+        margin: 0px;
+    }
+    .profile-circle{
+        width: 220px;
+        height: 220px;
+        margin-left: 20px;
+    }
+    .profile-circle img{
+        width: 300px;
+        height: 300px;
+    }
+    .product-header{
+        width: 35vh;
+    }
+
+}
+@media (min-width: 992px){
+    .profile-content{
+        display: flex;
+    } 
+
+}
